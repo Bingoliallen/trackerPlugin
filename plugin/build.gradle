@@ -71,7 +71,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         greetingsPlugin {
-            id = 'com.qcsdk.plugin'   // 插件的id，到时候apply的插件id
+            id = 'tracker.plugin'   // 插件的id，到时候apply的插件id
             displayName = 'tracker plugin'
             description = 'Gradle plugin to tracker'
             implementationClass = 'com.qcsdk.android.plugin.SensorsAnalyticsPlugin'
