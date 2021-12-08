@@ -49,13 +49,13 @@ repositories {
 // Unless overridden in the pluginBundle config DSL, the project version will
 // be used as your plugin version when publishing
 version = "1.0.0"
-group = "com.qcsdk.plugin"
+group = "tracker.plugin"
 
 
 pluginBundle {
 
-    website = 'https://github.com/Bingoliallen'
-    vcsUrl = 'https://github.com/Bingoliallen'
+    website = 'https://github.com/Bingoliallen/trackerPlugin'
+    vcsUrl = 'https://github.com/Bingoliallen/trackerPlugin'
     description = 'Gradle plugin to tracker'
     tags = ['tracker analytics', 'salutations']
 
