@@ -49,7 +49,7 @@ repositories {
 // Unless overridden in the pluginBundle config DSL, the project version will
 // be used as your plugin version when publishing
 version = "1.0.0"
-group = "tracker.plugin"
+group = "io.github.bingoliallen.tracker-plugin"
 
 
 pluginBundle {
@@ -71,7 +71,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         greetingsPlugin {
-            id = 'tracker.plugin'   // 插件的id，到时候apply的插件id
+            id = 'io.github.bingoliallen.tracker-plugin'   // 插件的id，到时候apply的插件id
             displayName = 'tracker plugin'
             description = 'Gradle plugin to tracker'
             implementationClass = 'com.qcsdk.android.plugin.SensorsAnalyticsPlugin'
