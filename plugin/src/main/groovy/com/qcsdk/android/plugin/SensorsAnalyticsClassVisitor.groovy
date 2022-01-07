@@ -8,7 +8,7 @@ import org.objectweb.asm.Opcodes
 
 class SensorsAnalyticsClassVisitor extends ClassVisitor implements Opcodes {
     private final
-    static String SDK_API_CLASS = "com/qcplay/qcsdk/tracker/listener/SensorsDataAutoTrackHelper"
+    static String SDK_API_CLASS = "com/qcplay/android/tracker/listener/SensorsDataAutoTrackHelper"
     private String[] mInterfaces
     private ClassVisitor classVisitor
 
@@ -97,7 +97,7 @@ class SensorsAnalyticsClassVisitor extends ClassVisitor implements Opcodes {
 
             @Override
             AnnotationVisitor visitAnnotation(String s, boolean b) {
-                if (s == 'Lcom/qcplay/qcsdk/tracker/listener/SensorsDataTrackViewOnClick;') {
+                if (s == 'Lcom/qcplay/android/tracker/listener/SensorsDataTrackViewOnClick;') {
                     isSensorsDataTrackViewOnClickAnnotation = true
                 }
 
