@@ -72,7 +72,7 @@ class SensorsAnalyticsTransform extends Transform {
             outputProvider.deleteAll()
         }
         printCopyRight()
-        System.out.println("开关:" + sensorsAnalyticsExtension.disableAppClick)
+        System.out.println("switch sensorsAnalyticsExtension.disableAppClick:" + sensorsAnalyticsExtension.disableAppClick)
 
         /**Transform 的 inputs 有两种类型，一种是目录，一种是 jar 包，要分开遍历 */
         inputs.each { TransformInput input ->
