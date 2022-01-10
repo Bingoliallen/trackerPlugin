@@ -24,7 +24,7 @@ uploadArchives {
         //artifactId
         pom.artifactId = 'tracker'
         //插件版本号
-        pom.version = '1.0.2'
+        pom.version = '1.0.2.1'
     }
 }
 
@@ -48,7 +48,7 @@ repositories {
 
 // Unless overridden in the pluginBundle config DSL, the project version will
 // be used as your plugin version when publishing
-version = "1.0.2"
+version = "1.0.2.1"
 group = "io.github.bingoliallen.tracker-plugin"
 
 

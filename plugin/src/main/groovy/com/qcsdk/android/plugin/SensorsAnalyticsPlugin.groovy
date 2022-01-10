@@ -13,7 +13,7 @@ class SensorsAnalyticsPlugin implements Plugin<Project> {
         Properties properties = new Properties()
         if (project.rootProject.file('gradle.properties').exists()) {
             properties.load(project.rootProject.file('gradle.properties').newDataInputStream())
-            disableSensorsAnalyticsPlugin = Boolean.parseBoolean(properties.getProperty("sensorsAnalytics.trackerPlugin", "false"))
+            disableSensorsAnalyticsPlugin = Boolean.parseBoolean(properties.getProperty("trackerPlugin", "false"))
         }
 
 
@@ -22,7 +22,7 @@ class SensorsAnalyticsPlugin implements Plugin<Project> {
             appExtension.registerTransform(new SensorsAnalyticsTransform(project, extension))
             println("------------trackerPlugin open--------------")
         } else {
-            println("------------trackerPlugin cloase--------------")
+            println("------------trackerPlugin close--------------")
         }
     }
 }
